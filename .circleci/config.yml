@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: node:9.9.0
-    working_directory: ~/vicarioustravel.info
+    working_directory: ~/vicarioustravel.com
     steps:
       - checkout
       - run:
