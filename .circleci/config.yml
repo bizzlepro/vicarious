@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: node:9.9.0
-    working_directory: ~/vicarioustravel.com
+    working_directory: ~/vicarioustravel.info
     steps:
       - checkout
       - run:
@@ -29,4 +29,4 @@ jobs:
             apt-get install -y awscli
       - run:
           name: Push to S3 bucket
-          command: cd public/ && aws s3 sync . s3://vicarioustravel.info
+          command: cd public/ && aws s3 sync . s3://vicarioustravel.info/*
